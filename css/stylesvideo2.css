@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
+
+body {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+#caja{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+#navbar1{
+  background-color: #149557;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#título{
+  font-family: 'Comfortaa', cursive;
+  font-size: 40px;
+  padding-top: 6px;
+}
+
+#botones{
+  height:30px;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 6px;
+}
+
+.boton{
+  background-color: #4CAF50;
+  margin: 3px;
+  border: 1px solid #4FFF50;
+  text-decoration: none;
+  font-family: 'Comfortaa', cursive;
+  font-size: 15px;
+  color: black;
+  padding: 22px 16px;
+  padding-top: 9px;
+}
+
+#página{
+  background-color: #D0E3D4;
+  display: flex;
+  width: 100%;
+  height: 540px;
+  justify-content: space-between;
+}
+
+#mitad1{
+  background-color: #c0e0f0;
+  width: 70%;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#fotobetis{
+  padding-top: 75px;
+  padding-left: 158px;
+}
+
+#mitad2{
+  background-color: #4db4e8;
+  width: 25%;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  margin-right: 20px;
+  margin-left: 25px;
+  padding-top: 40px;
+  padding-left: 20px;
+}
+
+.botonD{
+  background-color: #c0e0f0;
+  text-decoration: none;
+  font-family: 'Comfortaa', cursive;
+  font-size: 15px;
+  color: black;
+  padding: 18px 12px;
+  padding-top: 20px;
+}
+
+#navbar2{
+  background-color: #149557;
+  width: 100%;
+  height: 42px;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Comfortaa', cursive;
+  font-size: 19px;
+  padding-top: 18px;
+}
