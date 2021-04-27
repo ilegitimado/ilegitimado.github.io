@@ -1,18 +1,15 @@
-var textareaEl = document.getElementById("textarea");
-var wordCounterEl = document.getElementById("word_count");
+function Contar() {
+            var texto = document.getElementById("textarea").value;
+            var numPalabras = 0;
 
-var getTotalWord = (element) => {
-  var text = element.value;
-  var totalWord = text.split(' ').length;
+            for (var i = 0; i < texto.length; i++) {
+                var caracter = texto[i];
+                if (caracter == " ") {
+                    numPalabras += 1;
+                }
+            }
+            numPalabras += 1;
 
-  return text === '' ? 0 : totalWord;
-}
-
-var setWordCounter = (element, value) => {
-  element.textContent = value;
-}
-
-textareaEl.addEventListener('keyup', () => {
-  let totalWord = getTotalWord(textareaEl);
-  setWordCounter(wordCounterEl, totalWord);
-});
+            console.log(numPalabras)
+            document.getElementById("palabras").innerHTML = numPalabras;
+        }
