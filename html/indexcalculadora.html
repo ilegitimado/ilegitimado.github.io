@@ -22,14 +22,39 @@
       </div>
       <div id="página">
         <div id="mitad1">
-
-
-
-          <div class=”calculator__display”>0</div>
-          <div class=”calculator__keys”> … </div>
-
-
-
+          <form id="calculadora" name="calculator">
+                   <table>
+                      <tr>
+                         <td colspan="4">
+                            <input type="text" name="display" id="display" disabled>
+                         </td>
+                      </tr>
+                      <tr>
+                         <td><input type="button" name="uno" value="1" onclick="calculator.display.value += '1'"></td>
+                         <td><input type="button" name="dos" value="2" onclick="calculator.display.value += '2'"></td>
+                         <td><input type="button" name="tres" value="3" onclick="calculator.display.value += '3'"></td>
+                         <td><input type="button" class="operator" name="mas" value="+" onclick="calculator.display.value += '+'"></td>
+                      </tr>
+                      <tr>
+                         <td><input type="button" name="cuatro" value="4" onclick="calculator.display.value += '4'"></td>
+                         <td><input type="button" name="cinco" value="5" onclick="calculator.display.value += '5'"></td>
+                         <td><input type="button" name="seis" value="6" onclick="calculator.display.value += '6'"></td>
+                         <td><input type="button" class="operator" name="menos" value="-" onclick="calculator.display.value += '-'"></td>
+                      </tr>
+                      <tr>
+                         <td><input type="button" name="siete" value="7" onclick="calculator.display.value += '7'"></td>
+                         <td><input type="button" name="ocho" value="8" onclick="calculator.display.value += '8'"></td>
+                         <td><input type="button" name="nueve" value="9" onclick="calculator.display.value += '9'"></td>
+                         <td><input type="button" class="operator" name="por" value="x" onclick="calculator.display.value += '*'"></td>
+                      </tr>
+                      <tr>
+                         <td><input type="button" id="c" name="c" value="c" onclick="calculator.display.value = ''"></td>
+                         <td><input type="button" name="cero" value="0" onclick="calculator.display.value += '0'"></td>
+                         <td><input type="button" name="igual" value="=" onclick="calculator.display.value = eval(calculator.display.value)"></td>
+                         <td><input type="button" class="operator" name="entre" value="/" onclick="calculator.display.value += '/'"></td>
+                      </tr>
+                   </table>
+          </form>
         </div>
         <div id="mitad2">
           <a href="../html/indexcalculadoramatematicas.html" class="botonD">Matemáticas</a>
